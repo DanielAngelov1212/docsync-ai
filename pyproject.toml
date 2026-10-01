@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docsync-ai"
+version = "0.0.1"
+description = "A tool for generating and synchronizing documentation with code changes."
+authors = [
+    {name = "Daniel Angelov"},
+]
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+readme = "README.md"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["docsync*"]
